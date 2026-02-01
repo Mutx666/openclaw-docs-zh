@@ -1,11 +1,10 @@
 # OpenRouter 供应商配置
 
-OpenRouter 提供了一个统一的 API 接口，让你通过一个 Endpoint 和一个 API Key 就能访问市面上几乎所有的主流大模型。
+OpenRouter 提供统一的 API，允许通过一个端点和一组 API Key 调用数百种模型。它是 OpenAI 兼容的。
 
 ## 设置方式 (CLI)
-使用以下命令快速完成认证配置：
 \`\`\`bash
-openclaw onboard --auth-choice apiKey --token-provider openrouter --token "你的OPENROUTER_KEY"
+openclaw onboard --auth-choice apiKey --token-provider openrouter --token "你的KEY"
 \`\`\`
 
 ## 配置示例
@@ -21,5 +20,4 @@ openclaw onboard --auth-choice apiKey --token-provider openrouter --token "你�
 \`\`\`
 
 ## 注意事项
-- 模型引用格式固定为 \`openrouter/供应商/模型名\`。
-- OpenRouter 的 API 完全兼容 OpenAI 协议，OpenClaw 会自动处理 Base URL 的切换。
+- **引用格式**：模型 ID 请遵循 \`openrouter/提供商/模型名\` 的格式。
